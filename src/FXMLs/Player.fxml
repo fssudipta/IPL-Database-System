@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlayerController">
+    <children>
+        <Rectangle arcHeight="30.0" arcWidth="30.0" fill="linear-gradient(to bottom, #c0e0f3, #d9ecf9)" height="130.0" stroke="#d0e6f1" strokeWidth="1.0" width="515.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+            <VBox prefHeight="106.0" prefWidth="518.0" spacing="12.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <HBox prefHeight="26.0" prefWidth="497.0" spacing="20.0">
+                    <children>
+                        <Label fx:id="playerNameLabel" prefHeight="26.0" prefWidth="378.0" style="-fx-font-family: 'Orbitron'; -fx-font-weight: bold; -fx-font-size: 20px; -fx-text-fill: #1e3d5e;" text="Virat Kohli" wrapText="true">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="playerPositionLabel" style="-fx-font-family: 'Arial'; -fx-font-size: 16px; -fx-text-fill: #4a6572;" text="Batsman">
+                            <font>
+                                <Font name="Arial" size="16.0" />
+                            </font>
+                     <HBox.margin>
+                        <Insets right="-10.0" />
+                     </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <Label fx:id="playerPriceLabel" style="-fx-font-family: 'Arial'; -fx-font-size: 16px; -fx-text-fill: #3e5b6b;" text="Weekly Salary: 170,000 USD">
+                    <font>
+                        <Font name="Arial" size="16.0" />
+                    </font>
+                </Label>
+                <HBox spacing="20.0">
+                    <children>
+                        <Button fx:id="playerDetailsButton" mnemonicParsing="false" onAction="#showPlayerDetails" style="-fx-background-color: #88c6e4; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-background-radius: 25px; -fx-padding: 8 15; -fx-border-radius: 25px;" text="Details">
+                            <font>
+                                <Font name="Arial" size="14.0" />
+                            </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets top="4.0" />
+                     </HBox.margin>
+                        </Button>
+                        <Button fx:id="playerSellButton" mnemonicParsing="false" onAction="#sellPlayer" style="-fx-background-color: #ff9e9e; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-background-radius: 25px; -fx-padding: 8 15; -fx-border-radius: 25px;" text="Sell">
+                            <font>
+                                <Font name="Arial" size="14.0" />
+                            </font>
+                     <HBox.margin>
+                        <Insets top="4.0" />
+                     </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

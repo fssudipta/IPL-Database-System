@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #f0f8ff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClubLoginWindowController">
+    <children>
+        <ImageView fitHeight="394.0" fitWidth="459.0" layoutX="630.4" layoutY="139.0" preserveRatio="false" AnchorPane.leftAnchor="630.0" AnchorPane.topAnchor="139.0">
+            <image>
+                <Image url="@../images/open.gif" />
+            </image>
+        </ImageView>
+        <Label fx:id="titleLabel" layoutX="106.0" layoutY="50.0" style="-fx-font-family: 'Saira Stencil One', sans-serif; -fx-font-size: 48px; -fx-text-fill: #1e3d58; -fx-font-weight: bold;" text="IPL PLAYER DATABASE" />
+        <Label layoutX="174.0" layoutY="151.0" style="-fx-font-family: 'Saira Stencil One', sans-serif; -fx-font-size: 16px; -fx-text-fill: #2a4d69;" text="Username:" />
+        <ChoiceBox fx:id="usernameChoiceBox" layoutX="261.0" layoutY="144.0" prefHeight="38.0" prefWidth="273.0" style="-fx-background-color: #ffffff; -fx-border-color: #86b6d4; -fx-border-radius: 10px; -fx-padding: 5px;" />
+        <Label layoutX="174.0" layoutY="197.0" style="-fx-font-family: 'Saira Stencil One', sans-serif; -fx-font-size: 16px; -fx-text-fill: #2a4d69;" text="Password:" />
+        <PasswordField fx:id="passwordTextField" layoutX="265.0" layoutY="194.0" promptText="Enter password" style="-fx-background-color: #ffffff; -fx-border-color: #86b6d4; -fx-border-radius: 10px; -fx-padding: 5px;" />
+        <Button fx:id="loginButton" layoutX="250.0" layoutY="270.0" onAction="#login" style="-fx-background-color: #4e92b7; -fx-text-fill: #ffffff; -fx-font-family: 'Saira Stencil One', sans-serif; -fx-font-size: 16px; -fx-background-radius: 10px; -fx-padding: 10px 20px;" text="Sign In" />
+        <Button fx:id="resetButton" layoutX="350.0" layoutY="270.0" onAction="#reset" style="-fx-background-color: #f49a3b; -fx-text-fill: #ffffff; -fx-font-family: 'Saira Stencil One', sans-serif; -fx-font-size: 16px; -fx-background-radius: 10px; -fx-padding: 10px 20px;" text="Reset" />
+        <Button fx:id="registerButton" layoutX="302.0" layoutY="367.0" onAction="#register" style="-fx-background-color: #a4c6ea; -fx-text-fill: #ffffff; -fx-font-family: 'Saira Stencil One', sans-serif; -fx-font-size: 16px; -fx-background-radius: 10px; -fx-padding: 10px 20px;" text="Sign Up" />
+        <Label layoutX="290.0" layoutY="336.0" style="-fx-font-family: 'Saira Stencil One', sans-serif; -fx-font-size: 14px; -fx-text-fill: #2a4d69; -fx-opacity: 0.8;" text="Not registered yet?" />
+    </children>
+</AnchorPane>

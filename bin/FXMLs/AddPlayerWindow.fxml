@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #f0f8ff, #a8c0d2);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="controller.AddPlayerWindowController">
+    <Rectangle fill="linear-gradient(to right, #b2dff7, #a9cfe8)" height="80" width="600" AnchorPane.topAnchor="0.0" />
+
+    <Label text="Add New Player" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: black; -fx-font-family: 'Saira Stencil One';" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+
+    <VBox spacing="20" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0">
+        <HBox alignment="CENTER_LEFT" spacing="15">
+            <Label style="-fx-text-fill: black; -fx-min-width: 150; -fx-font-size: 15px;" text="Player Name:" />
+            <TextField fx:id="playerNameField" promptText="Enter player name" style="-fx-background-radius: 10; -fx-font-size: 15px;" />
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" spacing="15">
+            <Label style="-fx-text-fill: black; -fx-min-width: 150; -fx-font-size: 15px;" text="Country:" />
+            <TextField fx:id="playerCountryField" promptText="Enter country" style="-fx-background-radius: 10; -fx-font-size: 15px;" />
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" spacing="15">
+            <Label style="-fx-text-fill: black; -fx-min-width: 150; -fx-font-size: 15px;" text="Age:" />
+            <TextField fx:id="playerAgeField" promptText="Enter age" style="-fx-background-radius: 10; -fx-font-size: 15px;" />
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" spacing="15">
+            <Label style="-fx-text-fill: black; -fx-min-width: 150; -fx-font-size: 15px;" text="Height:" />
+            <TextField fx:id="playerHeightField" promptText="Enter height" style="-fx-background-radius: 10; -fx-font-size: 15px;" />
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" spacing="15">
+            <Label style="-fx-text-fill: black; -fx-min-width: 150; -fx-font-size: 15px;" text="Club:" />
+            <TextField fx:id="playerClubField" promptText="Enter club name" style="-fx-background-radius: 10; -fx-font-size: 15px;" />
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" spacing="15">
+            <Label style="-fx-text-fill: black; -fx-min-width: 150; -fx-font-size: 15px;" text="Position:" />
+            <TextField fx:id="playerPositionField" promptText="Enter position" style="-fx-background-radius: 10; -fx-font-size: 15px;" />
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" spacing="15">
+            <Label style="-fx-text-fill: black; -fx-min-width: 150; -fx-font-size: 15px;" text="Jersey Number:" />
+            <TextField fx:id="playerJerseyNumberField" promptText="Enter jersey number" style="-fx-background-radius: 10; -fx-font-size: 15px;" />
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" spacing="15">
+            <Label style="-fx-text-fill: black; -fx-min-width: 150; -fx-font-size: 15px;" text="Weekly Salary:" />
+            <TextField fx:id="playerWeeklySalaryField" promptText="Enter weekly salary" style="-fx-background-radius: 10; -fx-font-size: 15px;" />
+        </HBox>
+    </VBox>
+
+    <Button onAction="#addPlayer" style="-fx-background-color: linear-gradient(to right, #56ab2f, #a8e063); -fx-text-fill: white; -fx-font-size: 18px; -fx-background-radius: 20; -fx-padding: 12 24;" text="Add Player" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+        <effect>
+            <DropShadow color="#00000066" offsetX="0" offsetY="5" radius="10" />
+        </effect>
+    </Button>
+</AnchorPane>
