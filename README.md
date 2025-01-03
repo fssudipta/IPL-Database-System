@@ -15,6 +15,9 @@ Note: Jersey numbers are carefully managed to avoid conflicts.
 
 For better understanding, I will add a YouTube video demonstration later.
 
+N.B.: User have to run the server.java at first, then you have to run the client.java file. Once the app has started, you have to sign up for each club. And you have to remember the password for each club, as for security purpose, I have not kept any .txt file for maintaining a password database. 
+Then sign in to each club and then you can have the full access to the app.
+
 ![Screenshot 2025-01-02 152508](https://github.com/user-attachments/assets/4737bf1f-facc-4e79-887e-79daec0276a8)
 ![Screenshot 2025-01-02 152522](https://github.com/user-attachments/assets/21b30a6a-bd3c-4de5-bdc8-0ea67121e0a3)
 ![Screenshot 2025-01-02 152628](https://github.com/user-attachments/assets/14130e6c-7d0e-453d-99ef-10b7ec41fbff)
