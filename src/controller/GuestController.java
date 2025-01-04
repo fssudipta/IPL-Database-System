@@ -364,10 +364,7 @@ public class GuestController {
 
     @FXML
     private void buttonHoverEnter(MouseEvent event) {
-        // Get the button that triggered the event
         Button button = (Button) event.getSource();
-
-        // Apply the hover style to the button
         button.setStyle(
                 "-fx-background-color: #2980b9; " +
                         "-fx-text-fill: white; " +
@@ -378,10 +375,7 @@ public class GuestController {
 
     @FXML
     private void buttonHoverExit(MouseEvent event) {
-        // Get the button that triggered the event
         Button button = (Button) event.getSource();
-
-        // Revert to the original style
         button.setStyle(
                 "-fx-background-color: #3498db; " +
                         "-fx-text-fill: white; " +

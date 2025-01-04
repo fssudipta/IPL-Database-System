@@ -18,11 +18,6 @@ public class Server {
     private volatile HashMap<String, ClientInfo> clientMap;
     // volatile use kore different thread ke modify kora jabe
 
-    public static void main(String[] args) {
-        int port = 45045;
-        new Server(port);
-    }
-
     public Server(int port) {
         clientMap = new HashMap<>();
         transferPlayerList = new ArrayList<>();
@@ -130,5 +125,10 @@ public class Server {
             return true;
         }
         return false;
+    }
+
+    public static void main(String[] args) {
+        int port = 45045;
+        new Server(port);
     }
 }

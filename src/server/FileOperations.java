@@ -6,10 +6,6 @@ import data.db.Player;
 import java.io.*;
 import java.util.List;
 
-/*
-    FileOperations class handles reading from and writing to a file.
- */
-
 public class FileOperations {
     private String inputFileName;
     private String outputFileName;
@@ -51,7 +47,6 @@ public class FileOperations {
             player.setPosition(tokens[5]);
             player.setJerseyNumber(tokens[6].isEmpty() ? null : Integer.parseInt(tokens[6]));
             player.setWeeklySalary(Integer.parseInt(tokens[7]));
-
             int check = db.addPlayer(player);
             // check if player is added successfully
         }
@@ -60,7 +55,6 @@ public class FileOperations {
 
     public void writeToFile(List<Player> players) throws Exception {
         BufferedWriter bw = new BufferedWriter(new FileWriter(outputFileName));
-
         for (Player player : players) {
             bw.write(player.getName() + ",");
             bw.write(player.getCountry() + ",");
@@ -72,6 +66,22 @@ public class FileOperations {
             bw.write(player.getWeeklySalary() + "");
             bw.write("\n");
         }
+        bw.close();
+    }
+
+    public void writeToFile(Player player) throws Exception {
+        BufferedWriter bw = new BufferedWriter(new FileWriter(outputFileName, true));
+
+        bw.write(player.getName() + ",");
+        bw.write(player.getCountry() + ",");
+        bw.write(player.getAge() + ",");
+        bw.write(player.getHeight() + ",");
+        bw.write(player.getClub() + ",");
+        bw.write(player.getPosition() + ",");
+        bw.write(player.getJerseyNumber() + ",");
+        bw.write(player.getWeeklySalary() + "");
+        bw.write("\n");
+
         bw.close();
     }
 }

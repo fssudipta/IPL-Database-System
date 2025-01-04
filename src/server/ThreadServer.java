@@ -57,7 +57,8 @@ public class ThreadServer implements Runnable {
                 } else if (obj instanceof SaleInfo) {
                     SaleInfo saleInfo = (SaleInfo) obj;
                     if (saleInfo.getMessageHeader() == MessageHeader.SELL) {
-                        networkUtil.write(server.addToTransferWindow(saleInfo.getPlayerName(), saleInfo.getPlayerPrice()));
+                        networkUtil
+                                .write(server.addToTransferWindow(saleInfo.getPlayerName(), saleInfo.getPlayerPrice()));
                     }
                 }
             }
